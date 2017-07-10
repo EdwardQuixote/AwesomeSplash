@@ -3,7 +3,6 @@ package com.viksaa.sssplash.lib.activity;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatTextView;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
@@ -11,6 +10,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
+import com.balram.locker.view.LockActivity;
 import com.daimajia.androidanimations.library.YoYo;
 import com.github.jorgecastillo.FillableLoader;
 import com.github.jorgecastillo.FillableLoaderBuilder;
@@ -29,15 +29,18 @@ import io.codetail.animation.ViewAnimationUtils;
 
 /**
  * Created by varsovski on 25-Sep-15.
+ *
+ * Edited by Edward N. Ndukui,
+ * on 10th/July/2017,
+ * at 4:53PM.
  */
-abstract public class AwesomeSplash extends AppCompatActivity {
+abstract public class AwesomeSplash extends LockActivity {
 
     private RelativeLayout mRlReveal;
     private ImageView mImgLogo;
     private AppCompatTextView mTxtTitle;
     private FillableLoader mPathLogo;
     private FrameLayout mFl;
-
 
     private ConfigSplash mConfigSplash;
     private boolean hasAnimationStarted = false;

@@ -30,7 +30,7 @@ android {
     buildToolsVersion "23.0.0"
 
     defaultConfig {
-        minSdkVersion 14
+        minSdkVersion 15
         targetSdkVersion 23
         versionCode 1
         versionName "1.0.0"
@@ -78,6 +78,9 @@ dependencies {
 
     /*Circular reveal*/
     compile 'com.github.ozodrukh:CircularReveal:1.1.1@aar'
+
+    /* App Locker */
+    compile 'com.github.balrampandey19:AppLocker:1.0.1'
 
 
 
